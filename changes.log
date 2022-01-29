@@ -1,0 +1,38 @@
+>>> 22.11.2021
+- Initial public release.
+
+>>> 23.11.2021
+- Changed scripted trigger that determines which machine empires can learn basic psionic techs.
+    - Now it's any that has 'psionic' pops that aren't purged or enslaved.
+    - In theory, this will let modded non-Servitor, non-Assimilator machine empires research psionic techs.
+- Reduce rare crystal upkeep costs of crystalline weapons by 50%.
+- Nanite-Augmented Dragonscale Armor no longer requires the empire to be able to research advanced nanite technologies.
+
+>>> 23.11.2021
+- Fix missing OR in triggering conditions of event that registers space dragon kills.
+
+>>> 24.11.2021
+- Move strikecraft-related variables into a separate file for easier overwriting.
+- Move weapon ranges into variables for easier overwriting.
+- Move missile speed into variables for easier overwriting.
+- Fix issue with X-slot turrets for explosive, biological and nanite weapons.
+
+>>> 26.11.2021
+- Moved rare resource upkeep from zro distiller jobs to the zro distillery building. Rare resource cost of the zro distillery building has been increased.
+- Improved Crystal Farm no longer has rare crystals upkeep since that makes no sense anymore.
+- Empires that do not meet requirements for advanced biological/nanite/psionic research are now allowed to research up to 5 levels of repeatables for those weapon types.
+    - For empires that do meet those requirements, the repeatables are uncapped.
+- Fix Psionic Reinforcement icon.
+
+>>> 27.11.2021
+- Add basic support for "Machine & Robot Expansion".
+- Empires with 'Here Be Dragon' origin and empire that kill the Sky Dragon can now create sky dragon hatchling via the Dragon Hatchery.
+- Adjust cost of cloned dragons to be closer to vanilla.
+
+>>> 04.12.2021
+- Killing The Elder One dimensional horror summoned by 'The Broken Gates' archaeological site now also grants access to the Horror Armor and the Extradimensional Spike.
+- Fix wrong tech cost for tier 2 jump drive.
+- Fix typo in mod menu crisis tooltip.
+
+>>> 05.12.2021
+- Fix some localisation issues.
