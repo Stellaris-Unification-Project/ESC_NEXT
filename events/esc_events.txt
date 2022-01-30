@@ -71,8 +71,8 @@ planet_event = {
 	trigger = {
 		has_building = esc_building_dragon_hatchery
 		FROM = {
-			NOT = { has_valid_civic = civic_machine_terminator }
 			NOR = {
+				has_valid_civic = civic_machine_terminator
 				has_technology = esc_tech_dragon_hatchery
 				has_tech_option = esc_tech_dragon_hatchery
 			}

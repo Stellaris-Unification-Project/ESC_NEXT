@@ -60,10 +60,7 @@ esc_tech_reactor_6 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -78,10 +75,7 @@ esc_tech_reactor_6 = {
 		factor = @ESC_AI_tech_weight_multiplier
 		modifier = {
 			factor = 1.15
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -122,10 +116,7 @@ esc_tech_reactor_7 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -140,10 +131,7 @@ esc_tech_reactor_7 = {
 		factor = @ESC_AI_tech_weight_multiplier
 		modifier = {
 			factor = 1.15
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -184,10 +172,7 @@ esc_tech_reactor_8 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -214,10 +199,7 @@ esc_tech_reactor_8 = {
 		factor = @ESC_AI_tech_weight_multiplier
 		modifier = {
 			factor = 1.15
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -275,10 +257,7 @@ esc_tech_dark_matter_power_core_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -309,10 +288,7 @@ esc_tech_dark_matter_power_core_2 = {
 		}
 		modifier = {
 			factor = 1.15
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -370,10 +346,7 @@ esc_tech_dark_matter_power_core_3 = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -404,10 +377,7 @@ esc_tech_dark_matter_power_core_3 = {
 		}
 		modifier = {
 			factor = 1.15
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -472,17 +442,11 @@ esc_tech_reactor_psionic = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 0.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
@@ -513,17 +477,11 @@ esc_tech_reactor_psionic = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 0.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
@@ -846,17 +804,11 @@ esc_tech_sensors_psionic = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 0.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
@@ -883,17 +835,11 @@ esc_tech_sensors_psionic = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 0.25
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
@@ -1428,8 +1374,10 @@ esc_tech_aura_nanite_swarm = {
 	is_rare = yes
 
 	potential = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_auxiliary_forbidden }
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_nanite_weapons_forbidden }
+		NOR = {
+			has_global_flag = ESC_GLOBAL_FLAG_auxiliary_forbidden
+			has_global_flag = ESC_GLOBAL_FLAG_nanite_weapons_forbidden
+		}
 	}
 
 	prereqfor_desc = {

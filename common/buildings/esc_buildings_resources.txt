@@ -22,8 +22,10 @@ esc_building_zro_distillery = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
 	}
 
@@ -100,8 +102,10 @@ esc_building_dark_matter_facility = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOR = {
 			has_global_flag = ESC_GLOBAL_FLAG_chronospatial_weapons_forbidden
 			has_global_flag = ESC_GLOBAL_FLAG_enigmatic_weapons_forbidden
@@ -180,8 +184,10 @@ esc_building_nanite_foundry = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_nanite_weapons_forbidden }
 	}
 
@@ -258,8 +264,10 @@ esc_building_crystal_farm_1 = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_crystalline_weapons_forbidden }
 	}
 
@@ -332,8 +340,10 @@ esc_building_crystal_farm_2 = {
 	can_build = no
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_crystalline_weapons_forbidden }
 	}
 
@@ -405,8 +415,10 @@ esc_building_reprocessing_plant = {
 	category = manufacturing
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_scrapper_tech_forbidden }
 		exists = owner
 		owner = { has_country_flag = scrapper_killed }

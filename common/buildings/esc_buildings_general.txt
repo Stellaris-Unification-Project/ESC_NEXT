@@ -24,8 +24,10 @@ esc_building_central_research_bureau = {
 	empire_limit = { base = 1 }
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_central_research_bureau_forbidden }
 	}
 
@@ -146,8 +148,10 @@ esc_building_culture_nexus = {
 	empire_limit = { base = 1 }
 
 	potential = {
-		NOT = { has_modifier = slave_colony }
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_culture_nexus_forbidden }
+		NOR = {
+			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_culture_nexus_forbidden
+		}
 		exists = owner
 		owner = { is_regular_empire = yes }
 	}
@@ -309,8 +313,10 @@ esc_building_cerebral_node = {
 	empire_limit = { base = 1 }
 
 	potential = {
-		NOT = { has_modifier = slave_colony }
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_culture_nexus_forbidden }
+		NOR = {
+			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_culture_nexus_forbidden
+		}
 		exists = owner
 		owner = { is_hive_empire = yes }
 	}
@@ -419,8 +425,10 @@ esc_building_network_regulator = {
 	empire_limit = { base = 1 }
 
 	potential = {
-		NOT = { has_modifier = slave_colony }
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_culture_nexus_forbidden }
+		NOR = {
+			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_culture_nexus_forbidden
+		}
 		exists = owner
 		owner = { is_machine_empire = yes }
 	}
@@ -528,8 +536,10 @@ esc_building_materials_laboratory = {
 	empire_limit = { base = 1 }
 
 	potential = {
-		NOT = { has_modifier = slave_colony }
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_advanced_materials_laboratory_forbidden }
+		NOR = {
+			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_advanced_materials_laboratory_forbidden
+		}
 	}
 
 	allow = {
@@ -643,8 +653,10 @@ esc_building_technology_institute = {
 	empire_limit = { base = 1 }
 
 	potential = {
-		NOT = { has_modifier = slave_colony }
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_technology_institute_forbidden }
+		NOR = {
+			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_technology_institute_forbidden
+		}
 	}
 
 	allow = {
@@ -758,8 +770,10 @@ esc_building_watcher = {
 	empire_limit = { base = 1 }
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_watcher_of_eternity_forbidden }
 	}
 
@@ -862,8 +876,10 @@ esc_building_stellar_energy_tower = {
 	category = resource
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_stellarite_tech_forbidden }
 		exists = owner
 		owner = { has_country_flag = ESC_COUNTRY_FLAG_killed_stellarite_devourer }
@@ -965,8 +981,10 @@ esc_building_quantum_node = {
 	category = research
 
 	potential = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 		NOT = { has_global_flag = ESC_GLOBAL_FLAG_technosphere_tech_forbidden }
 		exists = owner
 		owner = { has_country_flag = technosphere_studied }

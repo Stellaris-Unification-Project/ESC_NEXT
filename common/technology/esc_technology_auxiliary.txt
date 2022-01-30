@@ -646,8 +646,10 @@ esc_tech_psionic_reinforcement = {
 	is_reverse_engineerable = no
 
 	potential = {
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_auxiliary_forbidden }
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
+		NOR = {
+			has_global_flag = ESC_GLOBAL_FLAG_auxiliary_forbidden
+			has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden
+		}
 	}
 
 	weight_modifier = {
