@@ -27,8 +27,8 @@ esc_building_central_research_bureau = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_central_research_bureau_forbidden
 		}
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_central_research_bureau_forbidden }
 	}
 
 	allow = {
@@ -773,8 +773,8 @@ esc_building_watcher = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_watcher_of_eternity_forbidden
 		}
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_watcher_of_eternity_forbidden }
 	}
 
 	allow = {
@@ -879,8 +879,8 @@ esc_building_stellar_energy_tower = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_stellarite_tech_forbidden
 		}
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_stellarite_tech_forbidden }
 		exists = owner
 		owner = { has_country_flag = ESC_COUNTRY_FLAG_killed_stellarite_devourer }
 	}
@@ -984,8 +984,8 @@ esc_building_quantum_node = {
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
+			has_global_flag = ESC_GLOBAL_FLAG_technosphere_tech_forbidden
 		}
-		NOT = { has_global_flag = ESC_GLOBAL_FLAG_technosphere_tech_forbidden }
 		exists = owner
 		owner = { has_country_flag = technosphere_studied }
 	}
